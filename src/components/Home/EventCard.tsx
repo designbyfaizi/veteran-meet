@@ -1,4 +1,5 @@
 import { Button } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 const EventCard = () => {
   return (
@@ -13,7 +14,7 @@ const EventCard = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum
         exercitationem quia necessitatibus...
       </h2>
-      <Button size="xl" radius={"md"} className="bg-primary-darker hover:(bg-cyan-700)">See More</Button>
+      <Button component={Link} to="/community/login" size="xl" radius={"md"} className="bg-primary-darker hover:(bg-cyan-700)">See More</Button>
     </div>
   );
 };
