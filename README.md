@@ -1,19 +1,28 @@
 # Veteran Meet
 ## Introduction
 
-<img align="right"  width="380" height="200" src="public/img/veteranMeetLogo.svg" /> </a>
+<img align="right"  width="380" height="250" src="public/img/veteranMeetLogo.svg" /> </a>
 
 **VeteranMeet** is **Web-based solution** to connect with veterans and engage them into community
 services based on their interests. A veteran is a person who has had long service or experience in a particular occupation or field. This application will help
 veterans of any profession to connect with other veterans and socialize through our platform and can participate into any community services such public talks, motivational speeches into
 educational institutions and organization, plantation drive and picnic etc. Additionally, they can take initiate a new community service and can involve other veterans into it.
 
+## Motivation
+
+
+
+<img align = "left" width="380" height="250"  src="public/img/general/illustration1.svg" >
+
 ## Stake Holders
+
 Followings are the major stake holders for Veteran-Meet: 
 - Veterns 
 - Public and private sector Educational institutions
 - Public and private organizations
 - NGOs
+
+#
 
 ## Major Modules:
 VeteranMeet aims to provide a social platform for retired professionals. It consists of **two** modules: <br>
@@ -42,3 +51,13 @@ This module will consist of the following features: <br>
   - Sapphire Veteran- with **65,000** stars
   - Platinum Veteran- with **70,000** stars
   - Eternal Sage- with **100,000** stars
+
+### Community Modules
+Community module will consist of the following: <br>
+**1.** Create Profile for Organizations. <br>
+**2.** Organization initiates a new community event. <br>
+**3.** Veteran connect with organization who initiate community service event. <br>
+**4.** Organizations can invite Veterans to join their event. <br>
+**5.** Organizations can set stars for their event to attract audience. <br>
+**6.** Events star count can only be set at the time of creation. <br>
+
