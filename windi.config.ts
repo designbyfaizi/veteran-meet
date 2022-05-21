@@ -14,7 +14,8 @@ export default defineConfig({
           light: '#ADDDE3',
           lighter:'#ADDDE3'
         },
-        dark: '#393939'
+        dark: '#393939',
+        greyish: '#F6F6F6'
       },
     },
   },
