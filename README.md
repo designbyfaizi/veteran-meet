@@ -65,6 +65,11 @@ Community module will consist of the following: <br>
 **6.** Events star count can only be set at the time of creation. <br>
 
 
+### Deployment
+- <a href="https://veteran-meet.vercel.app/">Front-End </a>
+- <a href="https://veteran-meet-backend.herokuapp.com/">Back-End </a>
+
+
 ### Tools and Tech:
 - <a href="https://www.typescriptlang.org/docs/handbook/react.html"> React Typescript</a> 
 - <a href="https://docs.vite.org/"> Vite </a> 
@@ -74,5 +79,5 @@ Community module will consist of the following: <br>
 
 ### Authors
 - <a href="http://daoud-hussain.com/"> Daoud Hussain </a> 
-- <a href="https://designbyfaizi.me/)"> Faizan Ullah </a> 
+- <a href="https://designbyfaizi.me"> Faizan Ullah </a> 
 
