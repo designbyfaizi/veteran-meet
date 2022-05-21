@@ -1,16 +1,19 @@
 import { Input, Button, PasswordInput } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 const CommunitySignUp = () => {
   const CommunityIcon = (
     <img src="/img/pages/Login/communityIcon.svg" alt="Community Name" />
   );
-  const OwnerIcon = <img src="/img/pages/Login/ownerIcon.svg" alt="Owner Name" />;
+  const OwnerIcon = (
+    <img src="/img/pages/Login/ownerIcon.svg" alt="Owner Name" />
+  );
   const MailIcon = <img src="/img/pages/Login/mailIcon.svg" alt="Email" />;
   const PasswordIcon = (
     <img src="/img/pages/Login/passwordIcon.svg" alt="Password" />
   );
   return (
-    <div className="flex min-h-screen">
+    <div className="flex h-screen">
       <div className="leftSection flex justify-center items-center w-[60%] login-bg">
         <img
           src="/img/general/illustration1.svg"
@@ -20,14 +23,18 @@ const CommunitySignUp = () => {
       </div>
       <div className="leftSection flex w-[40%] bg-[#F6F6F6] items-center p-[100px]">
         <div className="flex formContainer flex-col items-start gap-10">
-          <img
-            src="/img/veteranMeetLogo.svg"
-            alt="Veteran Meet"
-            className="w-[170px]"
-          />
+          <Link to="/">
+            <img
+              src="/img/veteranMeetLogo.svg"
+              alt="Veteran Meet"
+              className="w-[170px]"
+            />
+          </Link>
           <form className="flex flex-col gap-8">
             <h1 className="text-[62px] font-bold text-dark">Create</h1>
-            <h2 className="text-[30px] font-bold">Your Community Account</h2>
+            <h2 className="text-[30px] font-bold text-dark">
+              Your Community Account
+            </h2>
             <Input
               icon={CommunityIcon}
               placeholder="Community Name"
