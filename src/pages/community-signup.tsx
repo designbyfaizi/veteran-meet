@@ -4,6 +4,8 @@ import { useState } from "react";
 import axios from "axios";
 import { useNotifications } from "@mantine/notifications";
 import validateEmail from "../utils/validate-email";
+// @ts-ignore
+import { Navbar } from "@components/Home";
 
 const CommunitySignUp = () => {
   const navigate = useNavigate();
@@ -69,77 +71,80 @@ const CommunitySignUp = () => {
     }
   };
   return (
-    <div className="flex h-screen">
-      <div className="leftSection flex justify-center items-center w-[60%] login-bg">
-        <img
-          src="/img/general/illustration1.svg"
-          alt="Veteran Meet"
-          className="max-w-[570px]"
-        />
-      </div>
-      <div className="leftSection flex w-[40%] bg-[#F6F6F6] items-center p-[100px]">
-        <div className="flex formContainer flex-col items-start gap-10">
-          <Link to="/">
-            <img
-              src="/img/veteranMeetLogo.svg"
-              alt="Veteran Meet"
-              className="w-[170px]"
-            />
-          </Link>
-          <form onSubmit={signup} className="flex flex-col gap-8">
-            <h1 className="text-[62px] font-bold text-dark">Create</h1>
-            <h2 className="text-[30px] font-bold text-dark">
-              Your Community Account
-            </h2>
-            <Input
-              icon={CommunityIcon}
-              placeholder="Community Name"
-              size="md"
-              radius={"md"}
-              required
-              onChange={(event: any) => setCommunityName(event.target.value)}
-            />
-            <Input
-              icon={OwnerIcon}
-              placeholder="Owner Name"
-              size="md"
-              radius={"md"}
-              required
-              onChange={(event: any) => setOwnerName(event.target.value)}
-            />
-            <Input
-              icon={MailIcon}
-              placeholder="Community Email"
-              size="md"
-              radius={"md"}
-              required
-              onChange={(event: any) => setCommunityEmail(event.target.value)}
-            />
-            <PasswordInput
-              icon={PasswordIcon}
-              placeholder="Password"
-              description="Password must include at least one letter, number and special character"
-              radius="md"
-              size="md"
-              required
-              onChange={(event: any) => setPassword(event.target.value)}
-            />
-            <Button
-              type="submit"
-              size="md"
-              radius={"md"}
-              className="bg-primary-main hover:bg-primary-dark"
-              loading={loading}
-            >
-              Sign Up
-            </Button>
-            <p className="text-center">
-              Already have an account?{" "}
-              <Link to="/community/login" className="text-primary-dark">
-                Login
-              </Link>
-            </p>
-          </form>
+    <div className="flex flex-col">
+      <Navbar/>
+      <div className="flex min-h-screen">
+        <div className="leftSection flex justify-center items-center w-[60%] login-bg">
+          <img
+            src="/img/general/illustration1.svg"
+            alt="Veteran Meet"
+            className="max-w-[570px]"
+          />
+        </div>
+        <div className="leftSection flex w-[40%] bg-[#F6F6F6] items-center p-[100px]">
+          <div className="flex formContainer flex-col items-start gap-10">
+            <Link to="/">
+              <img
+                src="/img/veteranMeetLogo.svg"
+                alt="Veteran Meet"
+                className="w-[170px]"
+              />
+            </Link>
+            <form onSubmit={signup} className="flex flex-col gap-8">
+              <h1 className="text-[62px] font-bold text-dark">Create</h1>
+              <h2 className="text-[30px] font-bold text-dark">
+                Your Community Account
+              </h2>
+              <Input
+                icon={CommunityIcon}
+                placeholder="Community Name"
+                size="md"
+                radius={"md"}
+                required
+                onChange={(event: any) => setCommunityName(event.target.value)}
+              />
+              <Input
+                icon={OwnerIcon}
+                placeholder="Owner Name"
+                size="md"
+                radius={"md"}
+                required
+                onChange={(event: any) => setOwnerName(event.target.value)}
+              />
+              <Input
+                icon={MailIcon}
+                placeholder="Community Email"
+                size="md"
+                radius={"md"}
+                required
+                onChange={(event: any) => setCommunityEmail(event.target.value)}
+              />
+              <PasswordInput
+                icon={PasswordIcon}
+                placeholder="Password"
+                description="Password must include at least one letter, number and special character"
+                radius="md"
+                size="md"
+                required
+                onChange={(event: any) => setPassword(event.target.value)}
+              />
+              <Button
+                type="submit"
+                size="md"
+                radius={"md"}
+                className="bg-primary-main hover:bg-primary-dark"
+                loading={loading}
+              >
+                Sign Up
+              </Button>
+              <p className="text-center">
+                Already have an account?{" "}
+                <Link to="/community/login" className="text-primary-dark">
+                  Login
+                </Link>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </div>

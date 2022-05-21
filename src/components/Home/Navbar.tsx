@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { NavItem } from "../Home";
 
 const Navbar = () => {
+  const {pathname} = useLocation();
+  console.log(pathname == "/")
   return (
-    <nav className="sticky top-0 bg-white bg-opacity-70 !backdrop-blur-xl h-fit mb-[-100px] z-50">
+    <nav className="sticky top-0 bg-white !backdrop-blur-xl z-50">
       <div className="flex justify-between items-center h-[100px] container mx-auto ">
         <Link to="/">
           <img
@@ -12,15 +15,9 @@ const Navbar = () => {
           />
         </Link>
         <ul className="flex no-underline gap-4">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/community/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/community/signup">Sign Up</Link>
-          </li>
+          <NavItem active={pathname == "/"} to="/" text="Home" />
+          <NavItem active={pathname == "/community/login"} to="/community/login" text="Login" />
+          <NavItem active={pathname == "/community/signup"} to="/community/signup" text="Sign Up" />
         </ul>
       </div>
     </nav>
