@@ -10,6 +10,9 @@ educational institutions and organization, plantation drive and picnic etc. Addi
 
 ## Motivation
 
+Generally, Senior professionals don’t get involved into any sort of work after retirement. Rather, they tend to stay at home and spend time with their home activities. It often leads them towards a **monotonous** and **boredom** routine. Momentarily, this sedentary lifestyle may cause health problems among retired people. Hence, it is necessary to keep them engage into some positive and constructive community services which will preserve them active and energetic. Veteran Meet will be a web based solution for these veterans which aims to connect them with other veterans of their own profession and it will also help them to participate into any community
+service based on their interest.
+
 
 
 <img align = "left" width="380" height="250"  src="public/img/general/illustration1.svg" >
@@ -60,4 +63,16 @@ Community module will consist of the following: <br>
 **4.** Organizations can invite Veterans to join their event. <br>
 **5.** Organizations can set stars for their event to attract audience. <br>
 **6.** Events star count can only be set at the time of creation. <br>
+
+
+### Tools and Tech:
+- <a href="https://www.typescriptlang.org/docs/handbook/react.html"> React Typescript</a> 
+- <a href="https://docs.vite.org/"> Vite </a> 
+- <a href="https://windicss.org/"> Windi CSS </a> 
+- <a href="https://docs.nxlog.co/userguide/integrate/mongodb.html?gclid=Cj0KCQjwm6KUBhC3ARIsACIwxBjdfkgoo8IICRoORw1oEeiW1a8LTeLohUDsYqSDTU5o50PTEmAmcVYaAocdEALw_wcB"> MongoDB </a> 
+- <a href="https://devdocs.io/express/"> Express.js </a> 
+
+### Authors
+- <a href="http://daoud-hussain.com/"> Daoud Hussain </a> 
+- <a href="https://designbyfaizi.me/)"> Faizan Ullah </a> 
 
